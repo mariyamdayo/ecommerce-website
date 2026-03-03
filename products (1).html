@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products - My Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h2 class="logo">My Shop</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="#" onclick="toggleCart()">Cart 🛒</a></li>
+  </ul>
+</nav>
+
+<!-- Page Heading -->
+<section class="products">
+  <h2>Our Collection</h2>
+  <div class="all-products">
+    <div class="product-box">
+    <div class="product-image" style="background-image: url('/images/1.png');"></div>
+    <h3 class="product-name">Elegant Embroidered Silk Suit</h3>
+    <p class="product-price" data-price="4,000">Rs. 4,000</p>
+    <button onclick="addToCart (this)">Add to Cart</button>
+</div>
+    <div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 2.jpg');"></div>
+    <h3 class="product-price">Printed kurti</h3>
+    <p class="product-price" data-price="1,500">Rs. 1,500</p>
+    <button onclick="addToCart (this)">Add to Cart</button>
+</div>
+    <div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 3.jpg');"></div>
+    <h3 class="product-name">Eastern Dress</h3>
+    <p class="product-price" data-price="3,000">Rs. 3,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 4.jpg');"></div>
+    <h3 class="product-name">Sharara</h3>
+    <p class="product-price"data-price="6,000">Rs. 6,000</p>
+    <button onclick="addToCart (this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 5.jpg');"></div>
+    <h3 class="product-name">Party Wear Saree</h3>
+    <p class="product-price"data-price="15,000">Rs. 15,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 6.jpg');"></div>
+    <h3 class="product-name">Casual Kurta Set</h3>
+    <p class="product-price"data-price="2,000">Rs. 2,000</p>
+    <button onclick="addToCart (this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 7.jpg');"></div>
+    <h3 class="product-name">Shirt With Scirt</h3>
+    <p class="product-price"data-price="2,500">Rs. 2,500</p>
+    <button onclick="addToCart (this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 8.jpg');"></div>
+    <h3 class="product-name">Bridal Lehenga</h3>
+    <p class="product-price"data-price="50,000">Rs. 50,000</p>
+    <button onclick="addToCart (this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 9.jpg');"></div>
+    <h3 class="product-name">Evening Gown</h3>
+    <p class="product-price"data-price="10,000">Rs. 10,000</p>
+    <button onclick="addToCart (this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 10.jpg');"></div>
+    <h3 class="product-name">Royal White Bridal Gown</h3>
+    <p class="product-price"data-price="35,000">Rs. 35,000</p>
+    <button onclick="addToCart (this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 11.jpg');"></div>
+    <h3 class="product-name">Black Net Party Maxi</h3>
+    <p class="product-price"data-price="14,000">Rs. 14,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 12.jpg');"></div>
+    <h3 class="product-name">Blue Printed Kurti</h3>
+    <p class="product-price"data-price="1,200">Rs. 1,200</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 13.jpg');"></div>
+    <h3 class="product-name">Pastel Yellow Casual Suit</h3>
+    <p class="product-price"data-price="2,000">Rs. 2,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 14.jpg');"></div>
+    <h3 class="product-name">Light Lemon Lawn Dress</h3>
+    <p class="product-price"data-price="2,500">Rs. 2,500</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 15.jpg');"></div>
+    <h3 class="product-name">Orange Festive Kurta Set</h3>
+    <p class="product-price"data-price="3,000">Rs. 3,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 16.jpg');"></div>
+    <h3 class="product-name">White Pleated Maxi Dress</h3>
+    <p class="product-price"data-price="8,000">Rs. 8,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 17.jpg');"></div>
+    <h3 class="product-name">Magenta Party Wear Gown</h3>
+    <p class="product-price"data-price="12,000">Rs. 12,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 18.jpg');"></div>
+    <h3 class="product-name">Teal Embroidered Kurta</h3>
+    <p class="product-price"data-price="6,000">Rs. 6,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 19.jpg');"></div>
+    <h3 class="product-name">Peach Printed Casual Top</h3>
+    <p class="product-price"data-price="1,000">Rs. 1,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 20.jpg');"></div>
+    <h3 class="product-name">Sky Blue Summer Frock</h3>
+    <p class="product-price"data-price="2,500">Rs. 2,500</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 21.jpg');"></div>
+    <h3 class="product-name">Purple Traditional Dress</h3>
+    <p class="product-price"data-price="7,000">Rs. 7,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 22.jpg');"></div>
+    <h3 class="product-name">Eastern With Dupatta</h3>
+    <p class="product-price"data-price="4,000">Rs. 4,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 23.jpg');"></div>
+    <h3 class="product-name">Black Embroided Suit</h3>
+    <p class="product-price"data-price="6,000">Rs. 6,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 24.jpg');"></div>
+    <h3 class="product-name">Pink Cotton Dress</h3>
+    <p class="product-price"data-price="800">Rs. 800</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 25.jpg');"></div>
+    <h3 class="product-name">Shalwar kameez with Dupatta</h3>
+    <p class="product-price"data-price="2,000">Rs. 2,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 26.jpg');"></div>
+    <h3 class="product-name">Black Maxi</h3>
+    <p class="product-price"data-price="25,000">Rs. 25,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 27.jpg');"></div>
+    <h3 class="product-name">Silk Suit</h3>
+    <p class="product-price"data-price="7,000">Rs. 7,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 28.jpg');"></div>
+    <h3 class="product-name">Party wear Suit</h3>
+    <p class="product-price"data-price="8,000">Rs. 8,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 29.jpg');"></div>
+    <h3 class="product-name">Long Frock</h3>
+    <p class="product-price"data-price="5,000">Rs. 5,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 30.jpg');"></div>
+    <h3 class="product-name">Red Net Party Frock</h3>
+    <p class="product-price"data-price="6,500">Rs. 6,500</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 31.jpg');"></div>
+    <h3 class="product-name">Maroon Traditional Dress</h3>
+    <p class="product-price"data-price="8,000">Rs. 8,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 32.jpg');"></div>
+    <h3 class="product-name">Wedding Dress</h3>
+    <p class="product-price"data-price="10,000">Rs. 10,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 33.jpg');"></div>
+    <h3 class="product-name">Orange and Red Ensemble</h3>
+    <p class="product-price"data-price="2,200">Rs. 2,200</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 34.jpg');"></div>
+    <h3 class="product-name">Elegant Blue Kurta</h3>
+    <p class="product-price"data-price="3,000">Rs. 3,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 35.jpg');"></div>
+    <h3 class="product-name">Green Embroidered Suit</h3>
+    <p class="product-price"data-price="3,500">Rs. 3,500</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 36.jpg');"></div>
+    <h3 class="product-name">White Dress</h3>
+    <p class="product-price"data-price="2,000">Rs. 2,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 37.jpg');"></div>
+    <h3 class="product-name">Designer Suit</h3>
+    <p class="product-price"data-price="15,000">Rs. 15,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 38.jpg');"></div>
+    <h3 class="product-name">Pink Elegant-3 Piece Suit</h3>
+    <p class="product-price"data-price="6,000">Rs. 6,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 39.jpg');"></div>
+    <h3 class="product-name">Maroon Formal Outfit</h3>
+    <p class="product-price"data-price="3,000">Rs. 3,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 40.jpg');"></div>
+    <h3 class="product-name">Summer Kurta</h3>
+    <p class="product-price"data-price="2,000">Rs. 2,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 41.jpg');"></div>
+    <h3 class="product-name">Classic Black Dress</h3>
+    <p class="product-price"data-price="4,500">Rs. 4,500</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 42.jpg');"></div>
+    <h3 class="product-name">Pink Lace ensemble</h3>
+    <p class="product-price"data-price="5,000">Rs. 5,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 43.jpg');"></div>
+    <h3 class="product-name">Magenta Embroided Dress</h3>
+    <p class="product-price"data-price="5,000">Rs. 5,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 44.jpg');"></div>
+    <h3 class="product-name">Purple Embroided Kurti</h3>
+    <p class="product-price"data-price="2,000">Rs. 2,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 45.jpg');"></div>
+    <h3 class="product-name">Black Embroided Chiffon Dress</h3>
+    <p class="product-price"data-price="3,500">Rs. 3,500</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 46.jpg');"></div>
+    <h3 class="product-name">Luxury Black Velvet Suit</h3>
+    <p class="product-price"data-price="8,000">Rs. 8,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 47.jpg');"></div>
+    <h3 class="product-name">Elegant Suit With Black Embroidery</h3>
+    <p class="product-price"data-price="7,000">Rs. 7,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 48.jpg');"></div>
+    <h3 class="product-name">Teal Embroided Kurta Set</h3>
+    <p class="product-price"data-price="4,000">Rs. 4,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 49.jpg');"></div>
+    <h3 class="product-name">Lawn Embroided Kurta</h3>
+    <p class="product-price"data-price="2,000">Rs. 2,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 50.jpg');"></div>
+    <h3 class="product-name">Embroided Floral White Suit</h3>
+    <p class="product-price"data-price="9,000">Rs. 9,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 51.jpg');"></div>
+    <h3 class="product-name">Anarkali Long Frock</h3>
+    <p class="product-price"data-price="6,000">Rs. 6,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 52.jpg');"></div>
+    <h3 class="product-name">Embroided Kuri with Beige Trouser</h3>
+    <p class="product-price"data-price="3,000">Rs. 3,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 53.jpg');"></div>
+    <h3 class="product-name">Embroided Dress</h3>
+    <p class="product-price"data-price="8,000">Rs. 8,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 54.jpg');"></div>
+    <h3 class="product-name">Embroided Formal Suit</h3>
+    <p class="product-price"data-price="5,000">Rs. 5,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 55.jpg');"></div>
+    <h3 class="product-name">Red Embroidery Kurti</h3>
+    <p class="product-price"data-price="2,500">Rs. 2,500</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 56.jpg');"></div>
+    <h3 class="product-name">Embroided Green Kurti</h3>
+    <p class="product-price"data-price="1,500">Rs. 1,500</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 57.jpg');"></div>
+    <h3 class="product-name">Floral Panel Kurta</h3>
+    <p class="product-price"data-price="2,000">Rs. 2,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 58.jpg');"></div>
+    <h3 class="product-name">Printed Kurti</h3>
+    <p class="product-price"data-price="1,500">Rs. 1,500</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 59.jpg');"></div>
+    <h3 class="product-name">Elegant Blue Suit</h3>
+    <p class="product-price"data-price="4,000">Rs. 4,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 60.jpg');"></div>
+    <h3 class="product-name">Embroidered Formal Peplum Dress</h3>
+    <p class="product-price"data-price="7,000">Rs. 7,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 61.jpg');"></div>
+    <h3 class="product-name">Formal Dress</h3>
+    <p class="product-price"data-price="8,000">Rs. 8,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 62.jpg');"></div>
+    <h3 class="product-name">Embroidered Lehenga Set</h3>
+    <p class="product-price"data-price="35,000">Rs. 35,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 63.jpg');"></div>
+    <h3 class="product-name">Kurti with Trouser</h3>
+    <p class="product-price"data-price="2,000">Rs. 2,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 64.jpg');"></div>
+    <h3 class="product-name">Orange Embroided Kurti</h3>
+    <p class="product-price"data-price="2,000">Rs. 2,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 65.jpg');"></div>
+    <h3 class="product-name">Sequined Gown</h3>
+    <p class="product-price"data-price="10,000">Rs. 10,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 66.jpg');"></div>
+    <h3 class="product-name">Red Anarkali Suit</h3>
+    <p class="product-price"data-price="7,000">Rs. 7,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 67.jpg');"></div>
+    <h3 class="product-name">Anarkali Suit with Dupatta</h3>
+    <p class="product-price"data-price="6,000">Rs. 6,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 68.jpg');"></div>
+    <h3 class="product-name">Gold Embroidered Sharara Suit </h3>
+    <p class="product-price"data-price="15,000">Rs. 15,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 69.jpg');"></div>
+    <h3 class="product-name">Black and Gold Traditional Dress</h3>
+    <p class="product-price"data-price="12,000">Rs. 12,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 70.jpg');"></div>
+    <h3 class="product-name">Embroidered Gown</h3>
+    <p class="product-price"data-price="10,000">Rs. 10,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 71.jpg');"></div>
+    <h3 class="product-name">Sharara Suit</h3>
+    <p class="product-price"data-price="9,000">Rs. 9,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 72.jpg');"></div>
+    <h3 class="product-name">Designer Maxi</h3>
+    <p class="product-price"data-price="20,000">Rs. 20,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 73.jpg');"></div>
+    <h3 class="product-name">Black Embroided Net Lehenga choli</h3>
+    <p class="product-price"data-price="30,000">Rs. 30,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 74.jpg');"></div>
+    <h3 class="product-name">Lavender suit</h3>
+    <p class="product-price"data-price="8,000">Rs. 8,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 75.jpg');"></div>
+    <h3 class="product-name">Party wear Dress</h3>
+    <p class="product-price"data-price="7,000">Rs. 7,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 76.jpg');"></div>
+    <h3 class="product-name">Designer Lehenga choli</h3>
+    <p class="product-price"data-price="16,000">Rs. 16,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 77.jpg');"></div>
+    <h3 class="product-name">Shalwar kameez</h3>
+    <p class="product-price"data-price="5,000">Rs. 5,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 78.jpg');"></div>
+    <h3 class="product-name">Designer Long Frock</h3>
+    <p class="product-price"data-price="10,000">Rs. 10,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 79.jpg');"></div>
+    <h3 class="product-name">Luxury Beige Dress</h3>
+    <p class="product-price"data-price="8,000">Rs. 8,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 80.jpg');"></div>
+    <h3 class="product-name">Grey Embroided Suit</h3>
+    <p class="product-price"data-price="8,000">Rs. 8,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 81.jpg');"></div>
+    <h3 class="product-name">Formal Peach Sharara With Jacket</h3>
+    <p class="product-price"data-price="15,000">Rs. 15,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 82.jpg');"></div>
+    <h3 class="product-name">Violet Georgette Party wear</h3>
+    <p class="product-price"data-price="8,000">Rs. 8,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 83.jpg');"></div>
+    <h3 class="product-name">Casual Co-Ord Set</h3>
+    <p class="product-price"data-price="2,000">Rs. 2,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 84.jpg');"></div>
+    <h3 class="product-name">Pastel Aqua Two-Piece Suit</h3>
+    <p class="product-price"data-price="3,500">Rs. 3,500</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 85.jpg');"></div>
+    <h3 class="product-name">Red Embroided Kameez Shalwar with Dupatta</h3>
+    <p class="product-price"data-price="5,000">Rs. 5,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 86.jpg');"></div>
+    <h3 class="product-name">Navy Blue Sharara Suit</h3>
+    <p class="product-price"data-price="6,000">Rs. 6,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 87.jpg');"></div>
+    <h3 class="product-name">Elegant Beige Embroidery Formal Dress</h3>
+    <p class="product-price"data-price="8,000">Rs. 8,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 88.jpg');"></div>
+    <h3 class="product-name">White Floral Dress</h3>
+    <p class="product-price"data-price="8,000">Rs. 8,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 89.jpg');"></div>
+    <h3 class="product-name">Peach Pink Kurti Set</h3>
+    <p class="product-price"data-price="2,000">Rs. 2,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 90.jpg');"></div>
+
+    <h3 class="product-name">Traditional Two-piece Suit</h3>
+    <p class="product-price"data-price="2,000">Rs. 2,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 91.jpg');"></div>
+    <h3 class="product-name">Embroided Kaftan</h3>
+    <p class="product-price"data-price="6,000">Rs. 6,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 92.jpg');"></div>
+    <h3 class="product-name">Digital Printed Kurti</h3>
+    <p class="product-price"data-price="3,000">Rs. 3,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 93.jpg');"></div>
+    <h3 class="product-name">Printed Lawn Suit</h3>
+    <p class="product-price"data-price="5,000">Rs. 5,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 94.jpg');"></div>
+    <h3 class="product-name">Formal Dress</h3>
+    <p class="product-price"data-price="10,000">Rs. 10,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 95.jpg');"></div>
+    <h3 class="product-name">Long Frock</h3>
+    <p class="product-price"data-price="7,000">Rs. 7,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 96.jpg');"></div>
+    <h3 class="product-name">Festive wear</h3>
+    <p class="product-price"data-price="6,000">Rs. 6,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 97.jpg');"></div>
+    <h3 class="product-name">Embroidered Eastern Dress</h3>
+    <p class="product-price"data-price="8,000">Rs. 8,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 98.jpg');"></div>
+    <h3 class="product-name">Embroided Straight kurta with Dupatta</h3>
+    <p class="product-price"data-price="5,000">Rs. 5,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 99.jpg');"></div>
+    <h3 class="product-name">Lime Green Long Frock</h3>
+    <p class="product-price"data-price="7,000">Rs. 7,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 100.jpg');"></div>
+    <h3 class="product-name">Velvet Embroided Suit</h3>
+    <p class="product-price"data-price="12,000">Rs. 12,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 101.jpg');"></div>
+    <h3 class="product-name"> Mint Green Embroidered 3-Piece Suit</h3>
+    <p class="product-price"data-price="6,000">Rs. 6,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+<div class="product-box">
+    <div class="product-image" style="background-image: url('/images/dress 102.jpg');"></div>
+    <h3 class="product-name">Embroidered 3-Piece Ensemble</h3>
+    <p class="product-price"data-price="6,000">Rs. 6,000</p>
+    <button onclick="addToCart(this)">Add to Cart</button>
+</div>
+</div>
+</section>
+
+<!-- Cart Popup -->
+<div class="cart" id="cart">
+  <h2>Your Cart</h2>
+  <ul id="cart-items"></ul>
+  <p><strong>Total: Rs.<span id="total">0</span></strong></p>
+  <button onclick="toggleCart()">Close</button>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 My Shop | All Rights Reserved</p>
+</footer>
+<script src="java.js"></script>
+
+
+</body>
+</html>

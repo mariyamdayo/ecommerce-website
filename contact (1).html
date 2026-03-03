@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - My Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <h2 class="logo">My Shop</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="#" onclick="toggleCart()">Cart 🛒</a></li>
+  </ul>
+</nav>
+
+<!-- Contact Section -->
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p>We’d love to hear from you! Fill out the form below to get in touch.</p>
+
+  <div class="contact-container">
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 My Shop | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  // Simple form alert
+  document.getElementById("contact-form").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Thank you! Your message has been sent.");
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
